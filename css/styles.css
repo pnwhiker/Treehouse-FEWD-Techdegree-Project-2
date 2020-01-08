@@ -1,0 +1,155 @@
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+* {
+    font-family: 'Roboto Condensed';
+    list-style-type: none;
+}
+
+p.profile-intro {
+  font-family: 'Courier Prime';
+}
+
+    #icon_image1,
+    #icon_image2,
+    #icon_image3,
+    #icon_image4,
+    #icon_image5,
+    #icon_image6 {
+        height: 300px;
+        width: 450px;
+       
+    }
+
+.main-nav-top {
+  text-align: center;
+}
+
+.profile-intro {
+  margin: auto;
+  text-align: center;
+}
+
+img.profile-intro {
+  padding-top: 30px;
+}
+
+p.profile-intro {
+  padding: 10px 30px 75px;
+}
+
+p.description-paragraph {
+  max-width: 440px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+p.contact-info-paragraph {
+  max-width: 80% ;
+}
+
+.portfolio-header,
+.contact-information,
+.block-marketing,
+.block-search,
+.block-travel,
+.block-maps,
+.block-photos,
+.block-calculator,
+.contact-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ ul.contact-links-bottom {
+   display: none;
+ }
+
+ .main-nav-bottom {
+   display: flex;
+   justify-content: space-between;
+   
+ }
+
+/* ================================= 
+  Media Query Styles
+==================================== */
+
+@media (min-width: 768px) {
+
+ul.main-nav-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ }
+
+  .profile-intro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;    
+  }
+
+  p.profile-intro {
+    font-size: larger;
+    text-align: left;
+    padding: 10px 30px 75px;
+    max-width: 55%;
+  }
+
+  img.profile-intro {
+    max-width: 45%;
+  }
+
+  .blocks-all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;    
+  }
+    
+  ul.contact-links-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  ul.contact-links-bottom > li {
+    display: block;
+    margin-left: 30px;
+  }
+
+  h4.top-link-mobile {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  p.profile-intro {
+    font-size: larger;
+    text-align: left;
+    padding: 10px 30px 75px;
+    max-width: 55%;
+  }
+  div.blocks-all {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  div.main-nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div.main-nav-top > ul li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+}
